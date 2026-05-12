@@ -1,0 +1,10 @@
+langchain==0.2.14
+langchain-community==0.2.12
+langchain-openai==0.1.22
+langgraph==0.2.14
+faiss-cpu==1.8.0.post1
+openai==1.42.0
+tiktoken==0.7.0
+python-dotenv==1.0.1
+pandas==2.2.2
+jupyter==1.0.0
