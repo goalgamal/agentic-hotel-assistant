@@ -55,6 +55,7 @@ cp .env.example .env
 ```
 
 **5. Initialize the Data (If needed)**
+
 If you haven't generated the database and vector store yet, run the setup notebook first:
 
 * **`notebooks/notebook_1_setup.ipynb`**: Generates the fake hotel documents, FAISS vector store, and `hotel.db`.
