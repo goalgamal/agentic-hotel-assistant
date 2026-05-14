@@ -37,14 +37,12 @@ cd agentic-hotel-assistant
 ```
 
 **2. Create a virtual environment**
-
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 ```
 
 **3. Install dependencies**
-
 ```bash
 pip install -r requirements.txt
 ```
@@ -56,11 +54,17 @@ Copy the example .env file and add your OpenAI API key:
 cp .env.example .env
 ```
 
-**5. Run the Notebooks**
+**5. Initialize the Data (If needed)**
+If you haven't generated the database and vector store yet, run the setup notebook first:
 
-notebook_1_setup.ipynb: Run this first to generate the fake hotel documents, build the FAISS vector store, and initialize the hotel.db SQLite database.
+* **`notebooks/notebook_1_setup.ipynb`**: Generates the fake hotel documents, FAISS vector store, and `hotel.db`.
 
-notebook_2_agent.ipynb: Run this to compile the LangGraph agent and start the interactive terminal chat loop.
+**6. Run the App**
+Launch the Streamlit interface:
+
+```bash
+streamlit run app.py
+```
 
 **💬 Usage Example**
 
